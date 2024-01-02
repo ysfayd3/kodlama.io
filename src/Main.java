@@ -15,14 +15,14 @@ public class Main {
         ILogger[] loggers = {new InstructorLog(), new CourseLog(), new CategoryLog()};
         CategoryManager categoryManager = new CategoryManager(new CategoryHibernate(), loggers);
 
-        Course course = new Course(1, "caner", 8);
+        Course course = new Course(1, "Flutter", 8);
 
         Category category = new Category(9, "Elektronik");
 
         CourseManager courseManager = new CourseManager(new CourseHibernate(), loggers);
         courseManager.courseAdd(course);
         // breakpoınte bak
-        //
+
 
         //categoryManager.showCategoryName();
         //categoryManager.add(category);
